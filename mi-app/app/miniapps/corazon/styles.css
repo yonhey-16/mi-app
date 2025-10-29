@@ -1,0 +1,94 @@
+.terminal {
+  background-color: #000;
+  color: #ff3333;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section h1 {
+  color: #ff4d4d;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-section input {
+  background: black;
+  color: #ff6666;
+  border: 1px solid #ff3333;
+  border-radius: 5px;
+  padding: 8px 12px;
+  width: 280px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botones button {
+  background-color: #ff1a1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.botones button:hover {
+  background-color: #ff4d4d;
+}
+
+.heart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  white-space: pre;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #ff4d4d;
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); color: #ff4d4d; }
+  50% { transform: scale(1.05); color: #ff1e4d; }
+}
+
+.loading {
+  font-size: 1.4rem;
+  color: #ff4d4d;
+}
+
+.mensaje {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #ff4d4d;
+}
+
+.nombre {
+  color: #fff;
+  font-weight: bold;
+}
