@@ -14,8 +14,8 @@ export default function NavBar() {
   const links: LinkItem[] = [
     { href: "/", label: "Inicio" },
     { href: "/miniapps/corazon", label: "corazon" },
-    { href: "/miniapps/segunda", label: "segunda" },
-    { href: "/miniapps/tercera", label: "tercera" },
+    { href: "/miniapps/segunda", label: "Rompecabezas" },
+    { href: "/miniapps/tercera", label: "Agedres" },
   ];
 
   return (

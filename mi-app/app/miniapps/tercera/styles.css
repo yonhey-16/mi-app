@@ -1,0 +1,90 @@
+.chess-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.chess-board {
+  display: grid;
+  grid-template-rows: repeat(8, 60px);
+  border: 4px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chess-row {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+}
+
+.chess-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.blanca {
+  background-color: #f0d9b5;
+}
+
+.negra {
+  background-color: #b58863;
+}
+
+.chess-cell:hover {
+  filter: brightness(1.1);
+}
+
+.seleccionada {
+  outline: 3px solid #00ffff;
+}
+
+.pieza.blanco {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.pieza.negro {
+  color: #111;
+  text-shadow: 0 0 5px #fff;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  background: #ff6b6b;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffa36c;
+}
+
+.volver-btn {
+  background: #555;
+}

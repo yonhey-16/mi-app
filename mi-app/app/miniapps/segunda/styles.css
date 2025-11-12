@@ -1,0 +1,87 @@
+.juego-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.rompecabezas {
+  display: grid;
+  gap: 5px;
+  width: 80vmin;
+  height: 80vmin;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.pieza {
+  background: #ff6b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.pieza:hover {
+  background: #ffa36c;
+  transform: scale(1.05);
+}
+
+.ganado {
+  animation: aparecer 0.6s ease-in-out;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background: #ff6b6b;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffa36c;
+}
+
+.volver-btn {
+  background: #555;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

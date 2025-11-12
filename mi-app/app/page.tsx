@@ -11,11 +11,11 @@ export default function HomePage() {
         </Link>
 
         <Link href="/miniapps/segunda" className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700">
-          🎮 Segunda miniapp
+          🎮  Rompecabezas
         </Link>
 
         <Link href="/miniapps/tercera" className="bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700">
-          📸 Tercera miniapp
+          📸 Agedres
         </Link>
       </div>
     </main>
